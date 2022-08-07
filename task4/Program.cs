@@ -10,17 +10,21 @@ Console.WriteLine("Введите второе целое число ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье целое число ");
 int num3 = Convert.ToInt32(Console.ReadLine());
-int max = num1;
-if (max < num2)
+int max = num1; 
+if (max < num2) 
 {
-    max = num2;
+    max = num2; 
 }
 else
-Console.Write($"hfuyfkyuМаксимальное из трех чисел {num1}, {num2}, {num3}: {max}");
+{
+
+}
 if (max < num3)
 {
     max = num3;
 }   
 else
-
+{
+    
+}
 Console.Write($"Максимальное из трех чисел {num1}, {num2}, {num3}: {max}");
