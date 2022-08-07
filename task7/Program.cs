@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программу, которая принимает на вход трехзначное число
+// и на выходе показывает последнюю цифру 
+
+Console.WriteLine("Введите целое трехзначное число"); //Решение не учитывает отрицательные числа
+int n = Convert.ToInt32(Console.ReadLine());
+Console.Write($"Последняя цифра числа {n} = {n % 10}");
