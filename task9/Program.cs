@@ -21,10 +21,9 @@ int MaxDigit(int num)
 {
     int firstDigit = num / 10;
     int secondDigit = num % 10;
-    int result = firstDigit > secondDigit ? firstDigit : secondDigit; 
-    return result; //return firstDigit > secondDigit ? firstDigit : secondDigit; (без предыдущей строки)
+    if (firstDigit == secondDigit) return 0;
+    return firstDigit > secondDigit ? firstDigit : secondDigit; 
 }
 int result = MaxDigit(number);
-int result2 = MaxDigit(56); //проверка
-Console.WriteLine($"Наибольшая часть числа {number} -> {result}");
-Console.WriteLine($"Наибольшая часть числа {56} -> {result2}"); //проверка
+string res = result == 0 ? "цифры равны" : result.ToString();
+Console.WriteLine($"Наибольшая часть числа {number} -> {res}");
