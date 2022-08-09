@@ -9,6 +9,9 @@ int number = new Random().Next(10, 100);
 // Console.WriteLine($"Случайное число из диапазона 10-99 {number}");
 int firstDigit = number / 10;
 int secondDigit = number % 10;
-if (firstDigit == secondDigit) Console.WriteLine("цифры равны");
-else if (firstDigit > secondDigit) Console.WriteLine($"Наибольшая часть числа {number} -> {firstDigit}");
-else Console.WriteLine($"Наибольшая часть числа {number} -> {secondDigit}");
+// if (firstDigit == secondDigit) Console.WriteLine("цифры равны");
+// else if (firstDigit > secondDigit) Console.WriteLine($"Наибольшая часть числа {number} -> {firstDigit}");
+// else Console.WriteLine($"Наибольшая часть числа {number} -> {secondDigit}");
+
+int result = firstDigit > secondDigit ? firstDigit : secondDigit; //без проверки на равенство
+Console.WriteLine($"Наибольшая часть числа {number} -> {result}");
