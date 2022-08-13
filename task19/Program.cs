@@ -19,7 +19,8 @@ else
 {
     if (num / 10000 == num % 10)
     {
-        if (num / 1000 % 10 == num /10 % 10) Console.WriteLine("число является палиндромом");       
+        if (num / 1000 % 10 == num / 10 % 10) Console.WriteLine("число является палиндромом");
+        else Console.WriteLine("число не является палиндромом");
     }
-    else Console.WriteLine("число не является палиндромом"); 
+    else Console.WriteLine("число не является палиндромом");
 }
