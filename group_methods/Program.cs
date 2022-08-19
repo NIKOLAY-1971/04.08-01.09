@@ -38,3 +38,20 @@ int Method3()
 }
 int year = Method3();
 Console.WriteLine(year);
+
+
+// 4. Метод: что-то принимают и что-то возвращают
+
+string Method4(int count, string c)
+{
+    int i = 0;
+    string result = String.Empty; // присваение пустой строки (string result = "";)
+    while (i < count)
+    {
+        result += c;
+        i++;
+    }
+    return result;
+}
+string res = Method4(10, "abc"); //выводит  10 раз abc
+Console.WriteLine(res);
