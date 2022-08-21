@@ -27,12 +27,12 @@ int NumArrayElements(int[] array) //Подсчет количества элем
 int quantity = 0;
 for (int i = 0; i < array.Length; i++)
 {
-    if (array[i] >= 10 && array[i] <= 99) quantity+=1;
+    if (array[i] >= 10 && array[i] <= 99) quantity++;
 }
 return quantity;
 }
 
 int[] arr = CreateArrayRndInt(10, 1, 100);
 PrintArray(arr);
-int result = NumArrayElements(arr);
-Console.WriteLine($"Количество элементов массива на отрезке [10, 99] равно {result}");
+
+Console.WriteLine($"Количество элементов массива на отрезке [10, 99] равно {NumArrayElements(arr)}");
