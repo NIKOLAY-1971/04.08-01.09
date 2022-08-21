@@ -26,11 +26,11 @@ void PrintArray(int[] array) // Метод вывода массива
 
 Console.WriteLine("Введите количество элементов одномерного массива");
 int length = Convert.ToInt32(Console.ReadLine());
-int[] arr = CreateArrayRndInt(6, 1, 10);
+int[] arr = CreateArrayRndInt(length, 1, 10);
 PrintArray(arr);
 
 
-int ProdPairsNumbers(int[] arr) //Произведение крайних пар чисел
+int ProdPairsNumbers(int[] array) //Произведение крайних пар чисел
 {
     int length1 = 0;
     if (array.Length % 2 == 0) length1 = array.Length / 2;
