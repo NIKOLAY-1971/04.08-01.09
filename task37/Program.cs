@@ -30,18 +30,19 @@ int[] arr = CreateArrayRndInt(length, 1, 10);
 PrintArray(arr);
 
 
-int ProdPairsNumbers(int[] array) //Произведение крайних пар чисел
+int[] ProdPairsNumbers(int[] array) //Произведение крайних пар чисел
 {
     int length1 = 0;
     if (array.Length % 2 == 0) length1 = array.Length / 2;
     else length1 = array.Length / 2 + 1;
     int[] array1 = new int[length1];
-    for (int i = 0; i < array.Length / 2; i++)
+    for (int i = 0; i < array1.Length; i++)
     {
-        array1[i] = array[i] * array[array.Length - i - 1];
-        if (i + 1 > length1) array1[i + 1] = array[array.Length / 2];
+        if (i == array1.Length - 1 &&  (array1.Length - 1) % 2 == 0) array1[i] = array[length1];
+        else array1[i] = array[i] * array[array.Length - i - 1];
+        
     }
     return array1;
 }
-int[] arr1 = ProdPairsNumbers(array);
+int[] arr1 = ProdPairsNumbers(arr);
 PrintArray(arr1);
