@@ -49,4 +49,4 @@ int SumArrayElemMainDiagonal(int[,] matrix) // сумма элементов д�
 int[,] array2D = CreateMatrixRndInt(4, 4, 1, 9);
 PrintMatrix(array2D);
 int result = SumArrayElemMainDiagonal(array2D);
-Console.WriteLine(result);
+Console.WriteLine($"Cумма элементов двухмерного массива, находящихся на главной диагонали равна {result}");
