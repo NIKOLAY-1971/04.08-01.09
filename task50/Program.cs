@@ -28,8 +28,6 @@ void PrintMatrix(int[,] matrix) // Метод вывода массива
         Console.Write("[");
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            // if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i, j],3}, "); // 3 - размер вывода числа
-            // else Console.Write($"{matrix[i, j],3}");
             Console.Write(j < matrix.GetLength(1) - 1
             ? $"{matrix[i, j],3}, " : $"{matrix[i, j],3}");
 
@@ -40,8 +38,8 @@ void PrintMatrix(int[,] matrix) // Метод вывода массива
 }
 void ShowArrayElement(int[,] matrix, int numberi, int numberj) // Метод вывода существующего элемента массива
 {
-    if (numberi <= matrix.GetLength(0) && numberj <= matrix.GetLength(1)) 
-    Console.WriteLine($"Значение элемента матрицы в ({numberi},{numberj}) равно  {matrix[numberi - 1, numberj - 1]}");
+    if (numberi <= matrix.GetLength(0) && numberj <= matrix.GetLength(1))
+        Console.WriteLine($"Значение элемента матрицы в ({numberi},{numberj}) равно  {matrix[numberi - 1, numberj - 1]}");
     else Console.WriteLine("такого элемента в массиве нет");
 }
 
