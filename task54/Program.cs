@@ -32,7 +32,7 @@ void PrintMatrix(int[,] matrix) // Метод вывода массива
             Console.Write(j < matrix.GetLength(1) - 1
             ? $"{matrix[i, j],3} " : $"{matrix[i, j],3}");
         }
-        Console.WriteLine("]");
+        Console.WriteLine(" ]");
     }
     Console.WriteLine("");
 }
