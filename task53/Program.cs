@@ -41,7 +41,7 @@ void ChangeArrayStrings(int[,] matrix) // Метод замены местами
     }
 }
 
-int[,] array2D = CreateMatrixRndInt(4, 4, 1, 9);
+int[,] array2D = CreateMatrixRndInt(4, 5, 1, 9);
 PrintMatrix(array2D);
 ChangeArrayStrings(array2D);
 PrintMatrix(array2D);

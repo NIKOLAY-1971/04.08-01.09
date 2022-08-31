@@ -19,7 +19,6 @@ int[,] CreateMatrixRndInt(int row, int col, int min, int max) // Метод со
         {
             matrix[i, j] = rnd.Next(min, max + 1);
         }
-
     }
     return matrix;
 }
@@ -32,7 +31,6 @@ void PrintMatrix(int[,] matrix) // Метод вывода массива
         {
             Console.Write(j < matrix.GetLength(1) - 1
             ? $"{matrix[i, j],3} " : $"{matrix[i, j],3}");
-
         }
         Console.WriteLine("]");
     }
@@ -47,7 +45,7 @@ void SortingDescendingRowElements(int[,] matrix) //// Метод сортиро�
         for (int k = 0; k < matrix.GetLength(1); k++)
         {
             int max = matrix[i, k];
-            for (int j = k; j < matrix.GetLength(1); j++) // индексы максимального элемента строки
+            for (int j = k; j < matrix.GetLength(1); j++) // поиск индексов максимального элемента строки
             {
                 if (max <= matrix[i, j])
                 {
@@ -61,7 +59,6 @@ void SortingDescendingRowElements(int[,] matrix) //// Метод сортиро�
             matrix[im, jm] = max;
         }
     }
-    
 }
 int[,] array2D = CreateMatrixRndInt(3, 4, 1, 9);
 PrintMatrix(array2D);
