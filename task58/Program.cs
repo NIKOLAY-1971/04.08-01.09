@@ -45,14 +45,13 @@ int[,] CompositionMatrix(int[,] matrix2D, int[,] matrix2D1) // Метод пер
             for (int k = 0; k < matrix2D.GetLength(1); k++)
             {
                 composition = matrix2D[i, k] * matrix2D1[k, j];
-                summa  += composition;
+                summa += composition;
             }
             compositionMatrix[i, j] = summa;
         }
     }
     Console.WriteLine("Результат умножения матриц:");
     return compositionMatrix;
-    
 }
 
 
