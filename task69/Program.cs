@@ -10,7 +10,7 @@ int Degree(int num1, int num2)
 {
     
 if (num2 == 0) return 1;
-return num1 *= Degree(num1, num2 -1);
+return num1 * Degree(num1, num2 -1);
 
 }
 int result = Degree(a, b);
