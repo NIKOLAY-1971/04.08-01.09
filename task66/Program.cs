@@ -5,7 +5,7 @@
 
 
 
-int SummNaturalNumber(int numM, int numN) // Метод расчета суммы между любыми целыми числами
+int SummNaturalNumber(int numM, int numN) // Метод расчета суммы элементов между любыми целыми числами
 {
     if (numM > numN)
     {
