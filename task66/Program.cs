@@ -5,7 +5,7 @@
 
 
 
-int SummNaturalNumber(int numM, int numN)
+int SummNaturalNumber(int numM, int numN) // Метод расчета суммы между любыми целыми числами
 {
     if (numM > numN)
     {
@@ -14,19 +14,14 @@ int SummNaturalNumber(int numM, int numN)
         numN = t;
     }
     {
-        if (numM == numN) return numN;
+        if (numM == numN) return numN; 
         return numM + SummNaturalNumber(numM + 1, numN);
     }
-    // else
-    // {
-    //     if (numM == numN) return numM;
-    //     return numN + SummNaturalNumber(numN + 1, numM);
-    // }
 }
 
-Console.WriteLine("Введите первое целое положительное число");
+Console.WriteLine("Введите первое целое число");
 int m = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе целое положительное число");
+Console.WriteLine("Введите второе целое число");
 int n = Convert.ToInt32(Console.ReadLine());
 SummNaturalNumber(m, n);
 Console.Write($"Сумма чисел от {m} до {n} равна {SummNaturalNumber(m, n)}");

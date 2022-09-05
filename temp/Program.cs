@@ -68,42 +68,63 @@
 //     matrix[0,0,0] = rnd.Next(3, 6);
 //     Console.WriteLine(matrix[0,0,0]);
 
-void CreateMatrixRndInt(int row, int col, int dep, int min, int max) // Метод создания массива
-{
-    int[,,] matrix = new int[row, col, dep];
-    Random rnd = new Random();
+// void CreateMatrixRndInt(int row, int col, int dep, int min, int max) // Метод создания массива
+// {
+//     int[,,] matrix = new int[row, col, dep];
+//     Random rnd = new Random();
       
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); i++)
-        {
-            for (int d = 0; d < matrix.GetLength(2); d++)
-            {
-                matrix[i, j, d] = rnd.Next(min, max);
-                Console.WriteLine($"{matrix[i, j, d]},({i},{j},{d})");
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); i++)
+//         {
+//             for (int d = 0; d < matrix.GetLength(2); d++)
+//             {
+//                 matrix[i, j, d] = rnd.Next(min, max);
+//                 Console.WriteLine($"{matrix[i, j, d]},({i},{j},{d})");
                
-            }
-        }
-    }
+//             }
+//         }
+//     }
     
-}
+// }
 
 
 
 
-void PrintMatrix(int[,,] matrix) // Метод вывода массива
-{
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            for (int k = 0; k < matrix.GetLength(2); k++)
-            {
-                Console.WriteLine($"{matrix[i, j, k]},({i},{j},{k})");
-            }
-        }
-    }
-    Console.WriteLine("");
-}
-CreateMatrixRndInt(2, 2, 2, 10, 100);
+// void PrintMatrix(int[,,] matrix) // Метод вывода массива
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             for (int k = 0; k < matrix.GetLength(2); k++)
+//             {
+//                 Console.WriteLine($"{matrix[i, j, k]},({i},{j},{k})");
+//             }
+//         }
+//     }
+//     Console.WriteLine("");
+// }
+// CreateMatrixRndInt(2, 2, 2, 10, 100);
 // PrintMatrix(array);
+Console.WriteLine("Введите начальное число M:");
+int numberM = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Введите начальное число M:");
+int numberN = int.Parse(Console.ReadLine());
+
+///Метод нахождения суммы натуральных элементов в промежутке от M до N
+// void GapNumberSum (int numberM, int numberN, int sum)
+// {
+   
+//     if (numberM < numberN) 
+//     {
+//         Console.WriteLine($"Сумма натуральных элементов в промежутке от M до N: {sum}"); 
+//         return;
+//     }
+//     sum = sum + (numberM++);
+//     GapNumberSum(numberM, numberN, sum);
+// }
+
+// GapNumberSum(numberM, numberN, 0);
+ 
