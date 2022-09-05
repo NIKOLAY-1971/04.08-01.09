@@ -3,13 +3,14 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-Console.WriteLine("Введите целое положительное число");
-int number = Convert.ToInt32(Console.ReadLine());
-
-void NaturalNumber(int num)
+void NaturalNumber(int num) //Метод вывода натуральных чисел в обратном порядке
 {
     if (num == 0) return;
     Console.Write($"{num} ");
     NaturalNumber(num - 1);
 }
+
+Console.WriteLine("Введите целое положительное число");
+int number = Convert.ToInt32(Console.ReadLine());
+
 NaturalNumber(number);
